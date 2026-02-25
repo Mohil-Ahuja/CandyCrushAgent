@@ -1,1 +1,1 @@
-# CandyCrush
+# Candy Crush RL Agent
