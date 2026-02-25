@@ -85,3 +85,20 @@ We train and compare **three approaches** on identical seeds and conditions:
 - **TensorBoard** for real-time training visualization
 - **Matplotlib** for publication-quality comparison plots
 - All experiments run on **standard consumer laptops** (CPU-only) to demonstrate feasibility
+
+---
+
+## Slide 4: Key References & Research Papers
+
+1. **Proximal Policy Optimization Algorithms** (Schulman et al., 2017)
+   - *Relevance:* The foundational paper for PPO, which serves as the primary baseline algorithm for this project. It introduces the clipped surrogate objective that balances sample complexity and training stability.
+
+2. **DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models** (Shao et al., 2024)
+   - *Relevance:* This paper introduces **GRPO (Group Relative Policy Optimization)**. It explains the mechanics of computing advantages relative to a group of trajectories rather than using a separate value network, which is a core comparison point in your experiments.
+
+3. **Human-Like Playtesting with Deep Learning** (Gudmundsson et al., 2018 - *IEEE Transactions on Games*)
+   - *Relevance:* Published by researchers at King (the creators of Candy Crush), this paper explores using deep learning (CNNs) to playtest Match-3 games. It provides valuable insights into state representation (multi-channel grids) and action spaces specifically for Candy Crush.
+
+4. **Playing Match-3 Video Games with Deep Reinforcement Learning** (Kamaldinov et al., 2019 / General Match-3 RL literature)
+   - *Relevance:* Discusses the specific challenges of applying RL to Match-3 games, particularly handling the stochastic nature of falling tiles and the delayed rewards of cascade combos.
+
